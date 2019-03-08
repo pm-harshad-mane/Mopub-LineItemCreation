@@ -17,7 +17,7 @@ Here we are assuming that we have to create multiple line items with same config
 5. Now click the Save button.
 6. If your action was successful then you will see many calls executing in the network panel.
 7. Find the call in network panel "https://app.mopub.com/web-client/api/line-items/create"
-8. Right-click on this call in Network panel, select option "*Copy*" -> "*Copy as cURL*".
+8. Right-click on this call in Network panel, select option *Copy* *->* *Copy as cURL*.
 9. Paste the copied content in a new text file on your computer, say *line-item-creation-call.txt*.
 10. The "line-item-creation-call.txt" will look as following. This is the API call made to create your first Line Item. If you execute this curl command with all given parameters then it will crteate a new Line Item in MoPub UI with exactly same properties. Now we just have to execute the following CURL command on Terminal by changing the Rate field as required.
 
