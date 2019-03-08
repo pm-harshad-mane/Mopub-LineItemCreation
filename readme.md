@@ -7,7 +7,7 @@
 5. Now under this new order we have to create multiple line items, say 100 line items each with Rate of increments of $0.05. First with rate $0.05 , second with rate $0.10, third with $0.15 and so on.
 
 # Assumption
-Here we are assuming that we have to create 100 line items with same configuration and only chnage is the Rate value
+Here we are assuming that we have to create multiple line items with same configuration and only chnage is the Rate value
 
 # Solution
 1. Now we have to create the first line item in the sequence
