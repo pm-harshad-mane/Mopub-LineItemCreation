@@ -2,6 +2,7 @@ import json
 import subprocess
 import re
 
+linItemNamePrefix = "Line Item Name " # here you need to put line item name prefix, line items will be generated as "Line Item Name ( 0.05 )" for bid value 0.05
 firstLineItemBidRate = 0.05 # here you have to mention the bid rate of the last line-item created on UI
 bidBucketOf = 0.05 # here you need to mention the bucket value in increment of which you want next line item to be created
 maxBidRate = 0.20 # here you need to mention the max value of bid rate of which you want to create a line item; if you mention 5.00 then line item of bid rate 5.00 will be created
@@ -17,7 +18,7 @@ if postData and postData[0] and postData[0][1]:
 	postDataJson = json.loads(postData[0][1])
 	# initializing value for new bid rate
 	currentBidRate = firstLineItemBidRate
-	linItemName = postDataJson['name']
+	linItemName = linItemNamePrefix
 	# checking if new value is less than max bid rate allowed
 	while currentBidRate < maxBidRate:
 		print("")
