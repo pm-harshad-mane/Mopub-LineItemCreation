@@ -2,9 +2,9 @@ import json
 import subprocess
 import re
 
-firstLineItemBidRate = 0.8 # here you have to mention the bid rate of the last line-item created on UI
+firstLineItemBidRate = 0.05 # here you have to mention the bid rate of the last line-item created on UI
 bidBucketOf = 0.05 # here you need to mention the bucket value in increment of which you want next line item to be created
-maxBidRate = 0.90 # here you need to mention the max value of bid rate of which you want to create a line item; if you mention 5.00 then line item of bid rate 5.00 will be created
+maxBidRate = 0.20 # here you need to mention the max value of bid rate of which you want to create a line item; if you mention 5.00 then line item of bid rate 5.00 will be created
 fileName = "line-item-creation-call.txt" # name or path of the text file in which you have copied the Curl call of the line item which we need to refer; make sure it is created recently to have a valid csrf token
 
 # copying teh curlCall from the given file; if invalid file name is provided then code will stop after throwing errors
