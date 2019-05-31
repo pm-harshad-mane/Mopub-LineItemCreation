@@ -37,3 +37,6 @@ fileName = "line-item-creation-call.txt" # name or path of the text file in whic
 
 ````
 
+# Video Tutorial
+Here is a quick video demo https://www.hippovideo.io/video/play/L0Pfe1UQM6RrpMhkDrw4V3G798fjEP5wj7NZ5Qhj9Es
+
